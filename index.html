@@ -187,9 +187,9 @@
          <img src="/img/cloud.png" id="cloud">
          <img src="/img/mountain.png" id="mountain">
          <img src="/img/ground.png" id="ground">
-        <h1 id="heading">Totally Relax...</h1>
+        <h1 id="heading">Totally Relax<h1>
         <p id="head-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et risus sit amet justo vulputate faucibus.</p>
-                <!--<button onclick="clickFunction()" class="homeGo" id="homeGo">Let's Go</button>-->
+            <!--<button onclick="clickFunction()" class="homeGo" id="homeGo">Let's Go</button>-->
             
     </div>
          
@@ -230,14 +230,37 @@
     <main>
         <div class="home-content">
             <!--<h2 id= "heading2" style="font-size: 10em;">Relax.</h2>-->
-            <h3>It's that simple.</h3>
-            <p style="font-size: 30px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et risus sit amet justo vulputate faucibus. Etiam non cursus nulla, a sodales dui. Suspendisse finibus diam et pulvinar commodo. Suspendisse potenti. Pellentesque nisi neque, sollicitudin et feugiat ac, pretium eget massa. Vivamus ultricies felis id sodales auctor. Ut libero diam, maximus dapibus scelerisque ut, porta sed erat. Phasellus mattis commodo ante. Vivamus quis feugiat mi. Proin et gravida eros, id ultricies elit. Sed eget suscipit nisi, nec pharetra augue. Fusce eu quam risus. Mauris eget dui maximus, tristique quam et, molestie sapien. Donec sollicitudin eget mi sed porta. Proin sit amet dui sed justo venenatis facilisis. Vivamus felis magna, dignissim in hendrerit non, hendrerit eu urna.</p>
+            <h3>And take a breath...</h3>
+            <p>What is Meditation?
+                Meditation is a practice that involves training your mind to focus and redirect your thoughts. 
+                It is often associated with relaxation and stress reduction, but its benefits extend far beyond that. 
+                Meditation has been practiced for thousands of years and is found in various cultures and spiritual traditions. 
+                It doesn't require any specific beliefs or religious affiliation and can be practiced by anyone.</p>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
             $(window).scroll(function(){
-                $(".home-content").css("opacity", -1 + $(window).scrollTop() / 600);
+                $(".home-content").css("opacity", -1 + $(window).scrollTop() / 500);
             })
+
+
+            var face2 = document.querySelector('.face2'); // or use getElementById if you assign an ID to the element
+
+                // Toggle the hover-effect class on touch
+                face2.addEventListener('touchstart', function(event) {
+                var element = event.target;
+
+                // Check if the element already has the hover-effect class
+                var hasHoverEffect = element.classList.contains('touch-effect');
+
+                // Toggle the hover-effect class based on its current state
+                if (hasHoverEffect) {
+                element.classList.remove('touch-effect');
+                } else {
+                element.classList.add('touch-effect');
+                }
+                });
+
         </script>
 
         <div class="steps">
@@ -250,7 +273,11 @@
                 </div>
                 <div class="face face2">
                     <div class="card-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et risus sit amet justo vulputate faucibus. Etiam non cursus nulla, a sodales dui. Suspendisse finibus diam et pulvinar commodo. Suspendisse potenti. Pellentesque nisi neque, sollicitudin et feugiat ac, pretium eget massa. Vivamus ultricies felis id sodales auctor.</p>
+                        <p>
+                            Meditation is renowned for its ability to calm the mind and reduce stress levels. 
+                            By focusing your attention and quieting the constant stream of thoughts, you can experience 
+                            a sense of relaxation and inner peace.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -263,7 +290,9 @@
                 </div>
                 <div class="face face2">
                     <div class="card-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et risus sit amet justo vulputate faucibus. Etiam non cursus nulla, a sodales dui. Suspendisse finibus diam et pulvinar commodo. Suspendisse potenti. Pellentesque nisi neque, sollicitudin et feugiat ac, pretium eget massa. Vivamus ultricies felis id sodales auctor.</p>
+                        <p>Regular meditation practice enhances your ability to concentrate,
+                             sharpening your mental clarity and focus. This can lead to increased 
+                             productivity and efficiency in daily tasks.</p>
                     </div>
                 </div>
             </div>
@@ -276,7 +305,9 @@
                 </div>
                 <div class="face face2">
                     <div class="card-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et risus sit amet justo vulputate faucibus. Etiam non cursus nulla, a sodales dui. Suspendisse finibus diam et pulvinar commodo. Suspendisse potenti. Pellentesque nisi neque, sollicitudin et feugiat ac, pretium eget massa. Vivamus ultricies felis id sodales auctor.</p>
+                        <p>Studies suggest that meditation can have a positive impact on the immune system. 
+                            Regular practice may strengthen immune function, leading to a better defense against 
+                            illnesses and infections.</p>
                     </div>
                 </div>
             </div>
@@ -285,7 +316,7 @@
 
         <div class="index-desc">
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et risus sit amet justo vulputate faucibus. Etiam non cursus nulla, a sodales dui.
+            See the benefits of meditation as mentioned by practitioners.
             </p>
         </div>
 
@@ -296,58 +327,109 @@
         <div class="card-list">
             <article class="card2">
                 <header class="card-header">
-                    <p>"This is a quote"</p>
-                    <h2>Second Header</h2>
+                    <p>"Meditation is not a way of making your mind quiet. 
+                        It is a way of entering into the quiet that is already 
+                        there - buried under the 50,000 thoughts the average person thinks every day."</p><br>
+                    
                 </header>
+
+                <h2>Finding Quiet</h2>
 
                 <div class="card-author">
                     <div class="author-name">
                         <div class="author-name-prefix">Quote by</div>
-                        John Doe
+                        Deepak Chopra
                     </div>
                 </div>
             </article>
 
             <article class="card2">
                 <header class="card-header">
-                    <p>"This is a quote"</p>
-                    <h2>Second Header</h2>
+                    <p>"If the mind falls asleep, awaken it. If it starts wandering, make it quiet. 
+                        If you reach the state where there is neither sleep nor movement of mind, stay still in that, 
+                        the natural (real) state."</p><br>
+                    <h2>Natural State</h2>
                 </header>
+
+                <div class="card-author">
+                    <div class="author-name">
+                        <div class="author-name-prefix">Quote by</div>
+                        Ramana Maharshi
+                    </div>
+                </div>
             </article>
 
             <article class="card2">
                 <header class="card-header">
-                    <p>"This is a quote"</p>
-                    <h2>Second Header</h2>
+                    <p>"When you begin to meditate you may notice changes right away. Or nothing much may seem to change. 
+                        Don't count on anything dramatic. Most changes happen slowly."</p><br><br>
+                    <h2>Expectectations</h2>
                 </header>
+
+                <div class="card-author">
+                    <div class="author-name">
+                        <div class="author-name-prefix">Quote by</div>
+                        Ram Dass
+                    </div>
+                </div>
             </article>
 
             <article class="card2">
                 <header class="card-header">
-                    <p>"This is a quote"</p>
-                    <h2>Second Header</h2>
+                    <p>"One conscious breath in and out is a meditation."</p><br><br><br><br><br>
+                    <h2>Conscious Breath</h2>
                 </header>
+
+                <div class="card-author">
+                    <div class="author-name">
+                        <div class="author-name-prefix">Quote by</div>
+                        Eckhart Tolle
+                    </div>
+                </div>
             </article>
 
             <article class="card2">
                 <header class="card-header">
-                    <p>"This is a quote"</p>
-                    <h2>Second Header</h2>
+                    <p>"Sit down, close your eyes, get in a comfortable 
+                        position, and whatever happens, happens. If you think, 
+                        you think. If you don't think, you don't think. Don't put any effort into it"</p>
+                    <h2>No Effort</h2>
                 </header>
+
+                <div class="card-author">
+                    <div class="author-name">
+                        <div class="author-name-prefix">Quote by</div>
+                        Naval Ravikant
+                    </div>
+                </div>
             </article>
 
             <article class="card2">
                 <header class="card-header">
-                    <p>"This is a quote"</p>
-                    <h2>Second Header</h2>
+                    <p>"Meditation is not evasion, it is a serene encounter with reality."</p>
+                    <h2>Acceptance</h2>
                 </header>
+
+                <div class="card-author">
+                    <div class="author-name">
+                        <div class="author-name-prefix">Quote by</div>
+                        Thich Nhat Hanh
+                    </div>
+                </div>
             </article>
 
             <article class="card2">
                 <header class="card-header">
-                    <p>"This is a quote"</p>
-                    <h2>Second Header</h2>
+                    <p>"To understand the immeasurable, the mind must be extraordinarily quiet, still."</p>
+                    <h2>Understanding</h2>
                 </header>
+
+                <div class="card-author">
+                    <div class="author-name">
+                        <div class="author-name-prefix">Quote by</div>
+                        Jiddu Krishnamurti
+                    </div>
+                </div>
             </article>
         </div>
         </div>
@@ -356,9 +438,9 @@
         <footer>
             <div class="foot-content">
                 <div class="left box">
-                    <h2>About us</h2>
+                    <h2>About</h2>
                     <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe libero possimus minima atque. Aliquid, omnis? Nisi quia debitis molestias consequatur voluptatibus aut, iste eaque rerum saepe ullam facilis rem officiis?</p>
+                        <p>This is a web application built by Sauhardha Pandey, designed to let users experience the joy of meditation.</p>
                         <div class="social">
                             
                         </div>
@@ -366,16 +448,16 @@
                 </div>
 
                 <div class="center box">
-                    <h2>Address</h2>
+                    <h2>Contact</h2>
                     <div class="content">
                         <div class="place">
-                            <span class="text"> This is an, Address</span>
+                            <span class="text"> Email</span>
                         </div>
                         <div class="phone">
-                            <span class="text"> +02 1234 5678</span>
+                            <span class="text"> </span>
                         </div>
                         <div class="Email">
-                            <span class="text"> email@example.com</span>
+                            <span class="text">sauhardhap484@gmail.com</span>
                         </div>
                     </div>
                 </div>
